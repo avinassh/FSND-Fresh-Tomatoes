@@ -37,7 +37,12 @@
       </div>
     </div>
     <div class="container">
-        { movie_tiles }
+        {% for movie in movies %}
+            <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{{ movie.trailer_youtube_id }}" data-toggle="modal" data-target="#trailer">
+                <img src="{{ movie.poster_image_url }}" width="220" height="342">
+                <h2>{{ movie.title }}</h2>
+            </div>
+        {% endfor %}
     </div>
   </body>
 </html>
