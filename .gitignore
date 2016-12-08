@@ -41,3 +41,5 @@ nosetests.xml
 
 # virtualenv
 venv/
+
+index.html
