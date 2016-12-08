@@ -8,15 +8,17 @@ Its like Rotten Tomatoes, but only trailers and fresh.
         
         pip install -r requirements.txt
 
-2. Generate the output/index file:
+2. Add/update movies to `source.json` file.
+
+3. Generate the output/index file:
 
         python main.py
 
-3. Serve the current directory and access it at `http://localhost:8000`
+4. Serve the current directory and access it at `http://localhost:8000`
 
         python -m http.server
 
-4. Access the API at `http://localhost:8000/api.json`
+5. Access the API at `http://localhost:8000/api.json`
 
 ## Screenshot
 
